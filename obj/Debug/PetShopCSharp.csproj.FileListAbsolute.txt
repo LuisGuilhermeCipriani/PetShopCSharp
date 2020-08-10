@@ -1,0 +1,10 @@
+C:\Git\PetShopCSharp\bin\Debug\PetShopCSharp.exe.config
+C:\Git\PetShopCSharp\bin\Debug\PetShopCSharp.exe
+C:\Git\PetShopCSharp\bin\Debug\PetShopCSharp.pdb
+C:\Git\PetShopCSharp\obj\Debug\PetShopCSharp.csprojAssemblyReference.cache
+C:\Git\PetShopCSharp\obj\Debug\PetShopCSharp.Properties.Resources.resources
+C:\Git\PetShopCSharp\obj\Debug\PetShopCSharp.csproj.GenerateResource.cache
+C:\Git\PetShopCSharp\obj\Debug\PetShopCSharp.csproj.CoreCompileInputs.cache
+C:\Git\PetShopCSharp\obj\Debug\PetShopCSharp.exe
+C:\Git\PetShopCSharp\obj\Debug\PetShopCSharp.pdb
+C:\Git\PetShopCSharp\obj\Debug\PetShopCSharp.view.FormTelaPrincipal.resources

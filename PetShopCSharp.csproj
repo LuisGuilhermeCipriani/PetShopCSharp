@@ -46,23 +46,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="view\FormTelaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormTelaPrincipal.Designer.cs">
+      <DependentUpon>FormTelaPrincipal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FormTelaPrincipal.resx">
+      <DependentUpon>FormTelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +79,31 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="controller\" />
+    <Folder Include="model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PetShopFundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeCadastrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconePesquisar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeSobre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeSair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeCliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeAnimal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
