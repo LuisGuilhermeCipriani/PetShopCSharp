@@ -6,31 +6,18 @@ using System.Threading.Tasks;
 
 namespace PetShopCSharp.model
 {
-    class Cliente
+    class Animal
     {
         private int id;
         private string nome;
-        private string cpf;
         private int idade;
 
-        public Cliente() { }
+        public Animal() { }
 
-        public Cliente(string nome, string cpf, int idade)
+        public Animal(string nome, int idade)
         {
             this.nome = nome;
-            this.cpf = cpf;
             this.idade = idade;
-        }
-
-        
-        public int getId()
-        {
-            return id;
-        }
-
-        public void setId(int id)
-        {
-            this.id = id;
         }
 
         public string getNome()
@@ -38,20 +25,11 @@ namespace PetShopCSharp.model
             return nome;
         }
 
-        public void setCpf()
-        {
-            this.cpf = cpf;
-        }
-
         public void setNome(string nome)
         {
             this.nome = nome;
         }
 
-        public string getCpf()
-        {
-            return cpf;
-        }
         public int getIdade()
         {
             return idade;
