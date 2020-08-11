@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controller\ClienteController.cs" />
     <Compile Include="model\Animal.cs" />
     <Compile Include="model\Cliente.cs" />
     <Compile Include="Program.cs" />
@@ -82,9 +83,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="controller\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\PetShopFundo.png" />
   </ItemGroup>

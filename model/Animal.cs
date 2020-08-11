@@ -11,13 +11,15 @@ namespace PetShopCSharp.model
         private int id;
         private string nome;
         private int idade;
+        private string tipo;
 
         public Animal() { }
 
-        public Animal(string nome, int idade)
+        public Animal(string nome, int idade, string tipo)
         {
             this.nome = nome;
             this.idade = idade;
+            this.tipo = tipo;
         }
 
         public string getNome()
@@ -38,6 +40,16 @@ namespace PetShopCSharp.model
         public void setIdade(int idade)
         {
             this.idade = idade;
+        }
+
+        public string getTipo()
+        {
+            return tipo;
+        }
+
+        public void setTipo(string tipo)
+        {
+            this.tipo = tipo;
         }
     }
 }
