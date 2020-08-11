@@ -93,6 +93,16 @@ namespace PetShopCSharp.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconeLimpar {
+            get {
+                object obj = ResourceManager.GetObject("iconeLimpar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconePesquisar {
             get {
                 object obj = ResourceManager.GetObject("iconePesquisar", resourceCulture);

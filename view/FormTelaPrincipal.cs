@@ -34,5 +34,10 @@ namespace PetShopCSharp.view
             base.WndProc(ref message);
         }
 
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCadastroCliente formCadastroCliente = new FormCadastroCliente();
+            formCadastroCliente.ShowDialog();
+        }
     }
 }
