@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="model\Cliente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -82,7 +83,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="controller\" />
-    <Folder Include="model\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PetShopFundo.png" />
