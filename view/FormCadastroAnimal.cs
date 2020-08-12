@@ -14,21 +14,28 @@ namespace PetShopCSharp.view
 {
     public partial class FormCadastroAnimal : Form
     {
-        AnimalController AnimalController;
+        private AnimalController animalController;
         int id = 0;
-        public FormCadastroAnimal()
+        public FormCadastroAnimal(AnimalController animalController)
         {
             InitializeComponent();
-            AnimalController = new AnimalController();
             rdCachorro.Focus();
+            this.animalController = animalController;
+            enviaParaPesquisaAnimal();
         }
+
+        private void enviaParaPesquisaAnimal()
+        {
+            FormPesquisaAnimal form = new FormPesquisaAnimal(animalController);
+        }
+
 
         private void limparCampos()
         {
             tbNome.Text = "";
             tbIdade.Text = "";
             tbNome.Focus();
-            rdGato.Focus();
+            rdCachorro.Focus();
         }
 
         private void btLimpar_Click(object sender, EventArgs e)
@@ -54,8 +61,16 @@ namespace PetShopCSharp.view
                 Animal animal = new Animal(tbNome.Text, int.Parse(tbIdade.Text), tipo);
                 animal.setId(id);
 
-                AnimalController.cadastrarAnimal(animal);
-                MessageBox.Show("Animal cadastrado com sucesso!");
+                if (animalController.verificaAnimal(animal))
+                {
+                    MessageBox.Show("Esse animal já está cadastrado!");
+                }
+                else
+                {
+                    animalController.cadastrarAnimal(animal);
+                    MessageBox.Show("Animal cadastrado com sucesso!");
+                    limparCampos();
+                }
             }
             catch (System.FormatException)
             {

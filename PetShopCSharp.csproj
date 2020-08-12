@@ -69,6 +69,12 @@
     <Compile Include="view\FormCadastroCliente.Designer.cs">
       <DependentUpon>FormCadastroCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\FormPesquisaAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormPesquisaAnimal.Designer.cs">
+      <DependentUpon>FormPesquisaAnimal.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\FormPesquisaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormCadastroCliente.resx">
       <DependentUpon>FormCadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FormPesquisaAnimal.resx">
+      <DependentUpon>FormPesquisaAnimal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormPesquisaCliente.resx">
       <DependentUpon>FormPesquisaCliente.cs</DependentUpon>

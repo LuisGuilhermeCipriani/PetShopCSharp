@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PetShopCSharp.controller
 {
-    class AnimalController
+    public class AnimalController
     {
         private List<Animal> listaAnimais;
 
@@ -21,6 +21,18 @@ namespace PetShopCSharp.controller
             listaAnimais.Add(animal);
         }
 
+        public Boolean verificaAnimal(Animal animal)
+        {
+            foreach (Animal a in listaAnimais)
+            {
+                if((a.getNome().ToLower().Equals(animal.getNome().ToLower())) && (a.getIdade() == animal.getIdade()) && (a.getTipo().ToLower().Equals(animal.getTipo().ToLower())))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
         public List<Animal> getListaAnimais()
         {
             return listaAnimais;

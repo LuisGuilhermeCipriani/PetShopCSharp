@@ -23,6 +23,19 @@ namespace PetShopCSharp.controller
             listaClientes.Add(cliente);
         }
 
+        public Boolean verificaCliente(Cliente cliente)
+        {
+            foreach (Cliente c in listaClientes)
+            {
+                if (c.getCpf().ToLower().Equals(c.getCpf().ToLower()))
+                { 
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public List<Cliente> getListaClientes()
         {
             return listaClientes;

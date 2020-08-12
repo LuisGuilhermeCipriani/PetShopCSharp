@@ -12,13 +12,13 @@ using PetShopCSharp.model;
 
 namespace PetShopCSharp.view
 {
-    public partial class FormPesquisaCliente : Form
+    public partial class FormPesquisaAnimal : Form
     {
-        ClienteController clienteController;
-        public FormPesquisaCliente(ClienteController clienteController)
+        AnimalController animalController;
+        public FormPesquisaAnimal(AnimalController animalController)
         {
             InitializeComponent();
-            this.clienteController = clienteController;
+            this.animalController = animalController;
             configurarDataGridView();
         }
 
@@ -28,14 +28,14 @@ namespace PetShopCSharp.view
 
             dt.Columns.Add("ID");
             dt.Columns.Add("Nome");
-            dt.Columns.Add("CPF");
             dt.Columns.Add("Idade");
+            dt.Columns.Add("Tipo");
 
-            foreach (Cliente c in clienteController.getListaClientes())
+            foreach (Animal a in animalController.getListaAnimais())
             {
-                dt.Rows.Add(new object[] { c.getId(), c.getNome(), c.getCpf(), c.getIdade() });
+                dt.Rows.Add(new object[] { a.getId(), a.getNome(), a.getIdade(), a.getTipo() });
             }
-            
+
             dataGridView1.DataSource = dt;
         }
 

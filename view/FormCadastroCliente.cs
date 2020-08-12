@@ -44,9 +44,16 @@ namespace PetShopCSharp.view
                 Cliente cliente = new Cliente(tbNome.Text, tbCpf.Text, int.Parse(tbIdade.Text));
                 id++;
                 cliente.setId(id);
-                clienteController.cadastrarCliente(cliente);
-                MessageBox.Show("Cadastro realizado com sucesso!");
-                limparCampos();
+                if (clienteController.verificaCliente(cliente))
+                {
+                    MessageBox.Show("Este CPF já está cadastrado!");
+                }
+                else
+                {
+                    clienteController.cadastrarCliente(cliente);
+                    MessageBox.Show("Cadastro realizado com sucesso!");
+                    limparCampos();
+                }
             }
             catch (Exception)
             {

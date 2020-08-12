@@ -8,22 +8,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PetShopCSharp.view;
+using PetShopCSharp.model;
 
 namespace PetShopCSharp.view
 {
     public partial class FormTelaPrincipal : Form
     {
         ClienteController clienteController;
+        AnimalController animalController;
         public FormTelaPrincipal()
         {
             InitializeComponent();
             clienteController = new ClienteController();
+            animalController = new AnimalController();
             enviaParaCadastroCliente();
         }
 
         private void enviaParaCadastroCliente()
         {
             FormCadastroCliente form = new FormCadastroCliente(clienteController);
+        }
+
+        private void enviaParaCadastroAnimal()
+        {
+            FormCadastroAnimal form = new FormCadastroAnimal(animalController);
         }
         protected override void WndProc(ref Message message)
         {
@@ -55,7 +64,7 @@ namespace PetShopCSharp.view
 
         private void animalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormCadastroAnimal formCadastroAnimal = new FormCadastroAnimal();
+            FormCadastroAnimal formCadastroAnimal = new FormCadastroAnimal(animalController);
             formCadastroAnimal.ShowDialog();
         }
 
@@ -63,6 +72,12 @@ namespace PetShopCSharp.view
         {
             FormPesquisaCliente formPesquisaCliente = new FormPesquisaCliente(clienteController);
             formPesquisaCliente.ShowDialog();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            FormPesquisaAnimal formPesquisaAnimal = new FormPesquisaAnimal(animalController);
+            formPesquisaAnimal.ShowDialog();
         }
     }
 }

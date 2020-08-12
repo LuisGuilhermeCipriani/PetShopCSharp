@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PetShopCSharp.model
 {
-    class Animal
+    public class Animal
     {
         private int id;
         private string nome;
