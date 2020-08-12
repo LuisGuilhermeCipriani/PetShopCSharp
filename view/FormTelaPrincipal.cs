@@ -39,5 +39,16 @@ namespace PetShopCSharp.view
             FormCadastroCliente formCadastroCliente = new FormCadastroCliente();
             formCadastroCliente.ShowDialog();
         }
+
+        private void ferramentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void animalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCadastroAnimal formCadastroAnimal = new FormCadastroAnimal();
+            formCadastroAnimal.ShowDialog();
+        }
     }
 }

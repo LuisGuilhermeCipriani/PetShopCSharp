@@ -95,6 +95,7 @@
             this.animalToolStripMenuItem.Name = "animalToolStripMenuItem";
             this.animalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.animalToolStripMenuItem.Text = "Animal";
+            this.animalToolStripMenuItem.Click += new System.EventHandler(this.animalToolStripMenuItem_Click);
             // 
             // arquivoToolStripMenuItem
             // 
@@ -137,6 +138,7 @@
             this.ferramentasToolStripMenuItem.Name = "ferramentasToolStripMenuItem";
             this.ferramentasToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.ferramentasToolStripMenuItem.Text = "Sair";
+            this.ferramentasToolStripMenuItem.Click += new System.EventHandler(this.ferramentasToolStripMenuItem_Click);
             // 
             // FormTelaPrincipal
             // 

@@ -16,9 +16,8 @@ namespace PetShopCSharp.controller
             listaAnimais = new List<Animal>();
         }
 
-        public void cadastrarAnimal()
+        public void cadastrarAnimal(Animal animal)
         {
-            Animal animal = new Animal();
             listaAnimais.Add(animal);
         }
 

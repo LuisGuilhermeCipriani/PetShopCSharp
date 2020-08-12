@@ -57,6 +57,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="view\FormCadastroAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormCadastroAnimal.Designer.cs">
+      <DependentUpon>FormCadastroAnimal.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\FormCadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FormCadastroAnimal.resx">
+      <DependentUpon>FormCadastroAnimal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormCadastroCliente.resx">
       <DependentUpon>FormCadastroCliente.cs</DependentUpon>
