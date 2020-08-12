@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PetShopCSharp.model
 {
-    class Cliente
+    public class Cliente
     {
         private int id;
         private string nome;

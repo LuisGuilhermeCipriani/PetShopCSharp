@@ -14,13 +14,19 @@ namespace PetShopCSharp.view
 {
     public partial class FormCadastroCliente : Form
     {
-        ClienteController ClienteController;
+        private ClienteController clienteController;
         int id = 0;
-        public FormCadastroCliente()
+        public FormCadastroCliente(ClienteController clienteController)
         {
             InitializeComponent();
-            ClienteController = new ClienteController();
             tbNome.Focus();
+            this.clienteController = clienteController;
+            enviaParaPesquisaCliente();
+        }
+
+        private void enviaParaPesquisaCliente()
+        {
+            FormPesquisaCliente form = new FormPesquisaCliente(clienteController);
         }
 
         private void limparCampos()
@@ -38,7 +44,7 @@ namespace PetShopCSharp.view
                 Cliente cliente = new Cliente(tbNome.Text, tbCpf.Text, int.Parse(tbIdade.Text));
                 id++;
                 cliente.setId(id);
-                ClienteController.cadastrarCliente(cliente);
+                clienteController.cadastrarCliente(cliente);
                 MessageBox.Show("Cadastro realizado com sucesso!");
                 limparCampos();
             }

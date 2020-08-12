@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PetShopCSharp.controller
 {
-    class ClienteController
+     public class ClienteController
     {
         private List<Cliente> listaClientes;
 

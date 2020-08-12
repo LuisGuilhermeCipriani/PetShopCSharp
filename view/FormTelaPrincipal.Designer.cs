@@ -113,14 +113,15 @@
             this.toolStripMenuItem1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.toolStripMenuItem1.Image = global::PetShopCSharp.Properties.Resources.iconeCliente;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem1.Text = "Cliente";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Image = global::PetShopCSharp.Properties.Resources.iconeAnimal;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(112, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem3.Text = "Animal";
             // 
             // editarToolStripMenuItem
