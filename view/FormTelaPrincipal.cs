@@ -79,5 +79,11 @@ namespace PetShopCSharp.view
             FormPesquisaAnimal formPesquisaAnimal = new FormPesquisaAnimal(animalController);
             formPesquisaAnimal.ShowDialog();
         }
+
+        private void editarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormSobre formSobre = new FormSobre();
+            formSobre.ShowDialog(); 
+        }
     }
 }

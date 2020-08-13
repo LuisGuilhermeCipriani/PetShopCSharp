@@ -12,3 +12,4 @@ C:\Git\PetShopCSharp\obj\Debug\PetShopCSharp.view.FormCadastroCliente.resources
 C:\Git\PetShopCSharp\obj\Debug\PetShopCSharp.view.FormCadastroAnimal.resources
 C:\Git\PetShopCSharp\obj\Debug\PetShopCSharp.view.FormPesquisaCliente.resources
 C:\Git\PetShopCSharp\obj\Debug\PetShopCSharp.view.FormPesquisaAnimal.resources
+C:\Git\PetShopCSharp\obj\Debug\PetShopCSharp.view.FormSobre.resources

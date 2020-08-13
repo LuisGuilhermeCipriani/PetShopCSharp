@@ -84,7 +84,7 @@
             this.clienteToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.clienteToolStripMenuItem.Image = global::PetShopCSharp.Properties.Resources.iconeCliente;
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
@@ -93,7 +93,7 @@
             this.animalToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.animalToolStripMenuItem.Image = global::PetShopCSharp.Properties.Resources.iconeAnimal;
             this.animalToolStripMenuItem.Name = "animalToolStripMenuItem";
-            this.animalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.animalToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.animalToolStripMenuItem.Text = "Animal";
             this.animalToolStripMenuItem.Click += new System.EventHandler(this.animalToolStripMenuItem_Click);
             // 
@@ -113,7 +113,7 @@
             this.toolStripMenuItem1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.toolStripMenuItem1.Image = global::PetShopCSharp.Properties.Resources.iconeCliente;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
             this.toolStripMenuItem1.Text = "Cliente";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -121,7 +121,7 @@
             // 
             this.toolStripMenuItem3.Image = global::PetShopCSharp.Properties.Resources.iconeAnimal;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(112, 22);
             this.toolStripMenuItem3.Text = "Animal";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
@@ -132,6 +132,7 @@
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.editarToolStripMenuItem.Text = "Sobre";
+            this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
             // ferramentasToolStripMenuItem
             // 
